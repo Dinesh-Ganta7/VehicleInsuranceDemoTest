@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browserName" value="Chrome"/>
+  <listeners>
+    <listener class-name="insuranceapp.extentReports.Listners"/>
+  </listeners>
+  <test thread-count="5" name="truckInsuranceTest(failed)">
+    <classes>
+      <class name="insurancedemoapp.tests.TruckInsuranceTest">
+        <methods>
+          <include name="truckEnterInsuranceData" invocation-numbers="0"/>
+          <include name="truckSendQuote" invocation-numbers="0"/>
+          <include name="initializeDriver"/>
+          <include name="truckEnterVehicleData" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="truckEnterProductData" invocation-numbers="0"/>
+          <include name="truckSelectPriceOption" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- insurancedemoapp.tests.TruckInsuranceTest -->
+    </classes>
+  </test> <!-- truckInsuranceTest(failed) -->
+  <test thread-count="5" name="motorcycleInsuranceTest(failed)">
+    <classes>
+      <class name="insurancedemoapp.tests.MotorCycleInsuranceTest">
+        <methods>
+          <include name="motorcycleEnterProductData" invocation-numbers="0"/>
+          <include name="initializeDriver"/>
+          <include name="teardown"/>
+          <include name="motorcycleSelectPriceOption" invocation-numbers="0"/>
+          <include name="motorcycleEnterInsuranceData" invocation-numbers="0"/>
+          <include name="motorcycleEnterVehicleData" invocation-numbers="0"/>
+          <include name="motorcycleSendQuote" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- insurancedemoapp.tests.MotorCycleInsuranceTest -->
+    </classes>
+  </test> <!-- motorcycleInsuranceTest(failed) -->
+  <test thread-count="5" name="automobileInsuranceTest(failed)">
+    <classes>
+      <class name="insurancedemoapp.tests.AutomobileInsuranceTest">
+        <methods>
+          <include name="automobileEnterProductData" invocation-numbers="0"/>
+          <include name="automobileEnterInsuranceData" invocation-numbers="0"/>
+          <include name="automobileSendQuote" invocation-numbers="0"/>
+          <include name="initializeDriver"/>
+          <include name="automobileEnterVehicleData" invocation-numbers="0"/>
+          <include name="automobileSelectPriceOption" invocation-numbers="0"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- insurancedemoapp.tests.AutomobileInsuranceTest -->
+    </classes>
+  </test> <!-- automobileInsuranceTest(failed) -->
+  <test thread-count="5" name="camperInsuranceTest(failed)">
+    <classes>
+      <class name="insurancedemoapp.tests.CamperInsuranceTest">
+        <methods>
+          <include name="camperSendQuote" invocation-numbers="0"/>
+          <include name="camperEnterVehicleData" invocation-numbers="0"/>
+          <include name="camperSelectPriceOption" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="camperEnterInsuranceData" invocation-numbers="0"/>
+          <include name="initializeDriver"/>
+          <include name="camperEnterProductData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- insurancedemoapp.tests.CamperInsuranceTest -->
+    </classes>
+  </test> <!-- camperInsuranceTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

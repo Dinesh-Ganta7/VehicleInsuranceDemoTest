@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  >
+  <listeners>
+    <listener class-name="insuranceapp.extentReports.Listners"></listener>
+  </listeners>
+  <parameter name="browserName" value="Chrome"></parameter>
+  
+  <test name="truckInsuranceTest" >
+   <classes>
+     <class name="insurancedemoapp.tests.TruckInsuranceTest">
+       <methods>
+         <include name="truckEnterVehicleData"></include>
+           <include name="truckEnterInsuranceData"></include>
+           <include name="truckEnterProductData"></include>
+           <include name="truckSelectPriceOption"></include>
+           <include name="truckSendQuote"></include>
+       </methods>
+     </class>
+   </classes>
+  </test>
+  
+  
+   <test name="motorcycleInsuranceTest" >
+   <classes>
+     <class name="insurancedemoapp.tests.MotorCycleInsuranceTest">
+       <methods>
+         <include name="motorcycleEnterVehicleData"></include>
+           <include name="motorcycleEnterInsuranceData"></include>
+           <include name="motorcycleEnterProductData"></include>
+           <include name="motorcycleSelectPriceOption"></include>
+           <include name="motorcycleSendQuote"></include>
+       </methods>
+     </class>
+   </classes>
+  </test>
+  
+  <test  name="automobileInsuranceTest" >
+    <classes>
+      <class name="insurancedemoapp.tests.AutomobileInsuranceTest">
+        <methods>
+           <include name="automobileEnterVehicleData"></include>
+           <include name="automobileEnterInsuranceData"></include>
+           <include name="automobileEnterProductData"></include>
+           <include name="automobileSelectPriceOption"></include>
+           <include name="automobileSendQuote"></include>
+        </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+ 
+  
+  <test name="camperInsuranceTest" >
+   <classes>
+     <class name="insurancedemoapp.tests.CamperInsuranceTest">
+       <methods>
+         <include name="camperEnterVehicleData"></include>
+           <include name="camperEnterInsuranceData"></include>
+           <include name="camperEnterProductData"></include>
+           <include name="camperSelectPriceOption"></include>
+           <include name="camperSendQuote"></include>
+       </methods>
+     </class>
+   </classes>
+  </test>
+  
+  
+</suite> <!-- Suite -->
